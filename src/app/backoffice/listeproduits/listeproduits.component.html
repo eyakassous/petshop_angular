@@ -1,0 +1,62 @@
+<ul>
+    <li class="nav-item" style="list-style-type:none">
+      <app-search (searchTextChanged)="onSearchTextentered($event)"></app-search>
+     </li>
+  </ul>
+<h4>Liste des Acessoires</h4>
+<table class="table table-striped container">
+    <thead>
+        <tr>
+            <th> Image</th> 
+            <th> Id</th>
+            <th>Titre</th>
+            <th>Prix</th>
+            <th>Nouveau</th>
+            <th>Modifier</th>
+            <th>Supprimer</th>
+        </tr>            
+    </thead>
+    <tbody>
+        <tr *ngFor="let pr of lesproduits">
+            <td><img [src]="pr.photo" width="50px"></td>
+            <td>{{pr.id}}</td>
+            <td>{{pr.libelle}} </td>
+            <td> {{pr.prix}}</td>
+            <td> <input type="checkbox"  disabled>Nouveau</td>
+            <td> <input type="button" value="Modifier" class="btn btn-warning"></td>
+            <td> <input type="button" value="Supprimer" class="btn btn-info" (click)="supprimer(pr)" ></td>
+        </tr>    
+    </tbody>
+</table>
+<br> <br>
+<h4>Liste des Aliments</h4>
+<div *ngFor="let p of lesalim">
+    <div *ngIf="searchText === '' || p.libelle.toLowerCase().includes(searchText)"> 
+<table class="table table-striped container">
+    <thead>
+        <tr>
+            <th> Image</th>
+            <th> Id</th>
+            <th>Titre</th>
+            <th>Prix</th>
+            <th>Modifier</th>
+            <th>Supprimer</th>
+        </tr>            
+    </thead>
+    <tbody>
+        <tr>
+            <td><img [src]="p.photo" width="50px"></td>
+            <td>{{p.id}}</td>
+            <td>{{p.libelle}} </td>
+            <td> {{p.prix}}</td>
+            <td> <input type="button" value="Modifier" class="btn btn-warning" routerLink="modifier"></td>
+            <td> <input type="button" value="Supprimer" class="btn btn-info" (click)="supprimeralim(p)"  ></td>
+        </tr>    
+    </tbody>
+</table>
+</div>
+
+
+
+
+  

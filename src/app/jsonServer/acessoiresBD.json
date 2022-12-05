@@ -1,0 +1,236 @@
+{
+  "produits": [
+    {
+      "id": 1,
+      "libelle": "Pet Travel Carrier",
+      "photo": "assets/images/carrierpets.jpg",
+      "color": "blue",
+      "disponible": true,
+      "prix": 150,
+      "dimension": "17.91'L x 11.5'W x 12'H",
+      "brand": "MrefWest Homes for Pets",
+      "materiel": "Plastique",
+      "cat": "Accessoires",
+      "rate": 4
+    },
+    {
+      "id": 2,
+      "libelle": "NICHE CHALET LG",
+      "photo": "assets/images/niche.jpg",
+      "dimension": "84X101X86",
+      "disponible": false,
+      "prix": 800,
+      "brand": "MidWest Homes for Pets",
+      "materiel": "Bois",
+      "color": "beige et blue",
+      "cat": "Accessoires",
+      "rate": 5,
+      "diplomes": [
+        {
+          "email": "Eyakassous@gmail.com",
+          "message": "Quant est disponible"
+        }
+      ],
+      "commentaire": [
+        {
+          "email": "",
+          "message": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "libelle": "TAPIS VOITURE 1 PLACE",
+      "photo": "assets/images/tapis.jpg",
+      "dimension": "84X101X86",
+      "brand": "MSA",
+      "materiel": "coton",
+      "disponible": true,
+      "prix": 44.5,
+      "color": "blue",
+      "cat": "Accessoires",
+      "rate": 3
+    },
+    {
+      "id": 4,
+      "libelle": "COLLIER CUIR EDINBURGH ",
+      "photo": "assets/images/collier.jpg",
+      "dimension": "20-30X10",
+      "brand": "MASBRILL",
+      "materiel": "Cuir",
+      "disponible": true,
+      "color": "blue",
+      "prix": 30,
+      "cat": "Accessoires",
+      "rate": 2,
+      "diplomes": [
+        {
+          "email": "maramgnouma200@gmail.com",
+          "message": "Bonne Accessoire"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "libelle": "CEINTURE DE SECURITE VOITURE",
+      "photo": "assets/images/ceinture.jpg",
+      "dimension": "20MM",
+      "brand": "MASBRILL",
+      "materiel": "Cuir",
+      "disponible": true,
+      "color": "Noir",
+      "prix": 20,
+      "cat": "Accessoires",
+      "rate": 4
+    },
+    {
+      "id": 6,
+      "libelle": "Gilet de chien",
+      "photo": "assets/images/padded.webp",
+      "dimension": "M",
+      "brand": "EzyDog",
+      "materiel": "Néoprène",
+      "disponible": true,
+      "color": "grey",
+      "prix": 55.5,
+      "cat": "Accessoires",
+      "rate": 5
+    },
+    {
+      "id": 7,
+      "libelle": "TAPIS DE GRATTAGE ESSENCE NOCE",
+      "photo": "assets/images/tapiscat.jpg",
+      "dimension": "M",
+      "brand": "PETTOM",
+      "materiel": "Sisal",
+      "disponible": true,
+      "color": "Sable",
+      "prix": 24.9,
+      "cat": "Accessoires",
+      "rate": 3
+    },
+    {
+      "id": 8,
+      "libelle": "CAT COLLAR CATMANIA SUSHI",
+      "photo": "assets/images/catcoll.jpg",
+      "dimension": "10-10X20",
+      "brand": "MASBRILL",
+      "materiel": "coton",
+      "disponible": true,
+      "color": "Yellow",
+      "prix": 15.5,
+      "cat": "Accessoires",
+      "rate": 3
+    },
+    {
+      "id": 9,
+      "libelle": "COLLIER CHAT PAPILLON",
+      "photo": "assets/images/papillon.jpg",
+      "dimension": "10-10X20",
+      "brand": "MASBRILL",
+      "materiel": "Coton",
+      "disponible": true,
+      "color": "blue",
+      "prix": 25.9,
+      "cat": "Accessoires",
+      "rate": 3
+    },
+    {
+      "id": 10,
+      "libelle": "MAISON DE TOILETTE",
+      "photo": "assets/images/toilette.jpg",
+      "dimension": "35-36X47",
+      "brand": "CROCI",
+      "materiel": "Plaqtique",
+      "disponible": true,
+      "color": "Maron & Rose",
+      "prix": 60,
+      "cat": "Accessoires",
+      "rate": 4
+    },
+    {
+      "id": 11,
+      "libelle": "BAC À LITIÈRE FIGARO AVEC BORD SAVIC",
+      "photo": "assets/images/litier.jpg",
+      "dimension": "20-36X30",
+      "brand": "CROCI",
+      "materiel": "Plastique",
+      "disponible": true,
+      "color": "Blanc & gris",
+      "prix": 55.5,
+      "cat": "Accessoires",
+      "rate": 3
+    }
+  ],
+  "nouveauxprod": [
+    {
+      "id": 1001,
+      "libelle": "MAISON DE TOILETTE ROMEO AVEC FILTRE",
+      "photo": "assets/images/carr.jpg",
+      "dimension": "45X45X90",
+      "brand": "CROCI",
+      "materiel": "Plastique",
+      "disponible": true,
+      "color": "Rouge & Blanc",
+      "prix": 90,
+      "cat": "Accessoires",
+      "rate": 2,
+      "prixnouv": 66,
+      "remise": 20
+    },
+    {
+      "id": 1002,
+      "libelle": " GAMELLE TPR DOGGY",
+      "photo": "assets/images/gamelle.jpg",
+      "dimension": "20X20X30",
+      "brand": "CROCI",
+      "materiel": "Plastique",
+      "disponible": true,
+      "color": "Blue",
+      "prix": 40,
+      "cat": "Accessoires",
+      "rate": 3,
+      "remise": 10,
+      "prixnouv": 29.5
+    },
+    {
+      "id": 1003,
+      "libelle": " ARBRE A CHATS HAMBURG",
+      "photo": "assets/images/arbre.jpg",
+      "dimension": "30*30*60",
+      "brand": "MASBRILL",
+      "materiel": "Bois",
+      "disponible": true,
+      "color": "Blue",
+      "prix": 100,
+      "cat": "Accessoires",
+      "rate": 4,
+      "remise": 20,
+      "prixnouv": 81.5
+    }
+  ],
+  "nouveauxalim": [
+    {
+      "id": 1110,
+      "libelle": "hhhh",
+      "photo": "assets/images/boite.jpg",
+      "quantite": 200,
+      "disponible": true,
+      "prix": 12,
+      "dateFab": "03/01/2021",
+      "datefin": "20/04/2023",
+      "cat": "alimentation"
+    },
+    {
+      "id": 1111,
+      "libelle": "CARNILOVE BOITE SANGLIER AGNEAU",
+      "photo": "assets/images/boite.jpg",
+      "quantite": 200,
+      "disponible": true,
+      "prix": 12,
+      "dateFab": "03/11/2021",
+      "datefin": "20/15/2023",
+      "cat": "alimentation"
+    }
+  ]
+}

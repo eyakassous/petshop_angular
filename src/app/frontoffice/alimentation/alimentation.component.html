@@ -1,0 +1,35 @@
+
+<div class="container"  style="margin-top: 120px;">
+    <div class="bloc1">
+            <h3 class="title" style="text-align:center; padding-left: 22px;color: #b96662;">Nos Alimentation </h3>
+    </div>
+    <br>
+    <div class="row">
+      <div *ngFor="let pr of Alim"  class="col-sm-4">
+        <div> 
+        <div class="card box imaget" style="width: 18rem;">
+            <img [src]="pr.photo" class="card-img-top p-2" alt="..." height="250px" width="900px">
+            <div class="card-body">
+                    <h5 class="card-title">{{pr.libelle}}</h5> 
+        <ngb-rating [max]="5" [(rate)]="pr.rate" [readonly]="true"></ngb-rating>
+
+                    <p class="card-text">Prix:{{pr.prix}}DT</p>
+                    <span class="badge text-bg-secondary" *ngIf="pr.disponible==true">Disponible</span> 
+                  <!---  <span class="badge text-bg-secondary m-4">Commander</span> <br> <br> --> <br> <br>
+                    <button type="button" class="btn btnn1 container" [routerLink]="['/alimentation',pr.id]" > Détail 
+                        </button>
+                        <button type="button" class="btn btnn" style="margin-left:5px"  [routerLink]="['/contact']">Commander
+                        </button>
+                </div>
+            </div>
+          <br>
+            </div>
+            <div class="d-flex justify-content-center">
+
+            </div></div>
+            <div class="d-flex justify-content-center">
+              <button  class="boutton"><a class="nav-link" routerLinkActive="active" [routerLink]="['/accueil']">Page précidente</a></button>
+          </div>
+          
+
+

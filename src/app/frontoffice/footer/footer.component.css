@@ -1,0 +1,97 @@
+
+footer{
+    width: 100%;
+    bottom: 0;
+    background-color:  #CDC7BE;
+    color: rgb(71, 69, 68);
+    padding: 20px 0 10px;
+    
+    font-size: 13px;
+    line-height: 20px; 
+    height: auto;
+    
+}
+.row{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 20%;
+    padding: 7px;
+    width:160px;
+}
+.logo{
+    width:80px;
+    margin: bottom 8px;
+}
+.col h3{
+    width: fit-content;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    color: #b96662;
+    font-weight: 600;
+    font-size: large;
+    
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ footer h2{
+    color: #301B3F;
+    
+}
+.lg{
+    width: 40px;
+    height:40px;
+    text-align: center;
+    border: radius 1px;
+    cursor: pointer;
+
+}
+.col ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: medium;
+    font-weight: 400;
+    text-decoration: none;
+}
+.col ul li a{
+    text-align: none;
+    text-decoration: none;
+    color: rgb(71, 69, 68);
+}
+.col ul a:hover {
+    
+    color: rgb(93, 45, 17);
+
+}
+hr{
+    width: 90%;
+    border:0;
+    margin-left: 20px   ;
+    border-bottom: 1px solid;
+    
+}
+.cop{
+    text-align: center;
+    margin: 10px;
+}
+.underline{
+    width: 100%;
+    height: 5px;
+    background:#767676;
+
+}
+.paragh{
+    color: rgb(56, 54, 54);
+    letter-spacing: 1.5px;
+    font-size:18px;
+}

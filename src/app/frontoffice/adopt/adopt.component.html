@@ -1,0 +1,204 @@
+<div class="container" style="margin-top: 120px;">
+    
+    <div class="bloc1">
+        <div>
+            <h3 class="title" style="text-align:center; padding-left: 22px;color: #b96662;">Votre partenaire de
+                confiance pour adopter votre chiot, chaton ou animal abandonné. </h3>
+            <p>Vous n'êtes pas encore décidé en cette année 2022, mais vous pensez être prêt à vous jeter à l'eau en
+                2023 et franchir le pas :
+                Ajoutez un nouveau membre à votre belle petite (ou grande ?) famille, et quoi de mieux qu'un chien ou chat pour
+                compléter la jolie troupe que vous avez déjà à la maison ? Si vous avez des enfants, ils ne peuvent
+                qu'être ravis et se réjouir lorsque vous leur annoncez la nouvelle ! Un animal est un être vivant 
+
+                sensible : il ressent des émotions. C'est pourquoi adopter un animal n'est pas à prendre à la légère,
+                c'est un acte qui doit être réfléchi et dont découle de nombreuses responsabilités.</p>
+        </div>
+        <div>
+            <img src="assets/animals/adopt.png" width="300px" height="300px" />
+        </div>
+
+    </div>
+
+    <div class="bloc2">
+        
+        
+        <button (click)="transformation(0)" class="boutton" style="width:225"><span></span> tous</button>
+        <button (click)="transformation(1)" class="boutton" style="width:225"> <span><i
+                    class="fa-solid fa-cat"></i></span> chats</button>
+        <button (click)="transformation(2)" class="boutton"><span><i
+                    class="fa-solid fa-dog"></i></span>chiens</button><br />
+
+        <div class="nav-item dropdown boutton" style="border:black 1px solid;width:200px">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                poids
+            </a>
+            <ul class="dropdown-menu c1">
+                <li><a class="dropdown-item" (click)="transformation(4)">moin de 30kg</a></li>
+                <li><a class="dropdown-item" (click)="transformation(5)">entre 30kg et 50kg</a></li>
+                <li><a class="dropdown-item" (click)="transformation(6)">entre 50kg et 100kg</a></li>
+                <li><a class="dropdown-item" (click)="transformation(7)">plus de 100kg</a></li>
+            </ul>
+        </div>
+        <input type="radio" name="filter" value="disponibilite" (click)="transformation(3)">disponibilite
+
+    </div>
+    <ul>
+        <li class="nav-item" style="list-style-type:none">
+          <app-recherche (searchTextChanged)="onSearchTextentered($event)"></app-recherche>
+         </li>
+      </ul>
+
+    <br>
+    <div class="row" *ngIf="afficher==1">
+
+        <div *ngFor="let a of animalFilter(lesAnimaux,'cat') " class="col-sm-4">
+            <div class="card box imaget" style="width: 18rem;">
+                <img [src]="a.photo" class="card-img-top p-2" alt="..." height="250px" width="900px">
+                <div class="card-body">
+                    <h5 class="card-title">{{a.nom}}</h5>
+                    <p class="card-text">age:{{a.age}}DT</p>
+                    <span class="badge text-bg-secondary" *ngIf="a.disponible==true">Disponible</span>
+                    <span class="badge text-bg-secondary m-4" [routerLink]="['/contact']">Adopter</span> <br> <br>
+
+                        <button type="button" class="btn btnn1 mr-5" [routerLink]="['/adopt', a.id]" > Détail 
+                        </button>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <div class="row" *ngIf="afficher==2">
+
+        <div *ngFor="let a of animalFilter(lesAnimaux,'dog') " class="col-sm-4">
+            <div class="card box imaget" style="width: 18rem;">
+                <img [src]="a.photo" class="card-img-top p-2" alt="..." height="250px" width="900px">
+                <div class="card-body">
+                    <h5 class="card-title">{{a.nom}}</h5>
+                    <br>
+                    <p class="card-text">age:{{a.age}}DT</p>
+                    <span class="badge text-bg-secondary" *ngIf="a.disponible==true">Disponible</span>
+                    <span class="badge text-bg-secondary m-4" [routerLink]="['/contact']">Adopter</span> <br> <br>
+                    <button type="button" class="btn btnn1 mr-5" [routerLink]="['/adopt', a.id]" > Détail 
+                    </button>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <div class="row" *ngIf="afficher==0">
+
+        <div *ngFor="let a of lesAnimaux " class="col-sm-4">
+            <div class="card box imaget" style="width: 18rem;"
+            *ngIf="searchText === '' || a.nom.toLowerCase().includes(searchText)">
+                <img [src]="a.photo" class="card-img-top p-2" alt="..." height="250px" width="900px">
+                <div class="card-body">
+                    <h5 class="card-title">{{a.nom}}</h5>
+                    <br>
+                    <p class="card-text">age:{{a.age}}DT</p>
+                    <span class="badge text-bg-secondary" *ngIf="a.disponible==true">Disponible</span>
+                    <span class="badge text-bg-secondary m-4" [routerLink]="['/contact']">Adopter</span> <br> <br>
+                    <button type="button" class="btn btnn1 mr-5" [routerLink]="['/adopt', a.id]" > Détail 
+                    </button>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <div class="row" *ngIf="afficher==3">
+
+        <div *ngFor="let a of  animalDisponible(lesAnimaux,true)" class="col-sm-4">
+            <div class="card box imaget" style="width: 18rem;">
+                <img [src]="a.photo" class="card-img-top p-2" alt="..." height="250px" width="900px">
+                <div class="card-body">
+                    <h5 class="card-title">{{a.nom}}</h5>
+                    <p class="card-text">age:{{a.age}}DT</p>
+                    <span class="badge text-bg-secondary" *ngIf="a.disponible==true">Disponible</span>
+                    <span class="badge text-bg-secondary m-4" [routerLink]="['/contact']">Adopter</span> <br> <br>
+                    <button type="button" class="btn btnn1 mr-5" [routerLink]="['/adopt', a.id]" > Détail 
+                    </button>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <div class="row" *ngIf="afficher==4">
+
+        <div *ngFor="let a of weigthFilter1(lesAnimaux,30) " class="col-sm-4">
+            <div class="card box imaget" style="width: 18rem;">
+                <img [src]="a.photo" class="card-img-top p-2" alt="..." height="250px" width="900px">
+                <div class="card-body">
+                    <h5 class="card-title">{{a.nom}}</h5>
+                    <br>
+                    <p class="card-text">age:{{a.age}}</p>
+                    <span class="badge text-bg-secondary" *ngIf="a.disponible==true">Disponible</span>
+                    <span class="badge text-bg-secondary m-4" [routerLink]="['/contact']">Adopter</span> <br> <br>
+                    <button type="button" class="btn btnn1 mr-5" [routerLink]="['/adopt', a.id]" > Détail 
+                    </button>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <div class="row" *ngIf="afficher==5">
+
+        <div *ngFor="let a of weigthFilter2(lesAnimaux,30,50) " class="col-sm-4">
+            <div class="card box imaget" style="width: 18rem;">
+                <img [src]="a.photo" class="card-img-top p-2" alt="..." height="250px" width="900px">
+                <div class="card-body">
+                    <h5 class="card-title">{{a.nom}}</h5>
+                    <br>
+                    <p class="card-text">age:{{a.age}}DT</p>
+                    <span class="badge text-bg-secondary" *ngIf="a.disponible==true">Disponible</span>
+                    <span class="badge text-bg-secondary m-4" [routerLink]="['/contact']">Adopter</span> <br> <br>
+                    <button type="button" class="btn btnn1 mr-5" [routerLink]="['/adopt', a.id]" > Détail 
+                    </button>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <div class="row" *ngIf="afficher==6">
+
+        <div *ngFor="let a of weigthFilter2(lesAnimaux,50,100) " class="col-sm-4">
+            <div class="card box imaget" style="width: 18rem;">
+                <img [src]="a.photo" class="card-img-top p-2" alt="..." height="250px" width="900px">
+                <div class="card-body">
+                    <h5 class="card-title">{{a.nom}}</h5>
+                    <br>
+                    <p class="card-text">age:{{a.age}}DT</p>
+                    <span class="badge text-bg-secondary" *ngIf="a.disponible==true">Disponible</span>
+                    <span class="badge text-bg-secondary m-4" [routerLink]="['/contact']">Adopter</span> <br> <br>
+                    <button type="button" class="btn btnn1 mr-5" [routerLink]="['/adopt', a.id]" > Détail 
+                    </button>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <div class="row" *ngIf="afficher==7">
+
+        <div *ngFor="let a of  weigthFilter3(lesAnimaux,100) " class="col-sm-4">
+            <div class="card box imaget" style="width: 18rem;">
+                <img [src]="a.photo" class="card-img-top p-2" alt="..." height="250px" width="900px">
+                <div class="card-body">
+                    <h5 class="card-title">{{a.nom}}</h5>
+                    <br>
+                    <p class="card-text">age:{{a.age}}DT</p>
+                    <span class="badge text-bg-secondary" *ngIf="a.disponible==true">Disponible</span>
+                    <span class="badge text-bg-secondary m-4" [routerLink]="['/contact']">Adopter</span> <br> <br>
+                    <button type="button" class="btn btnn1 mr-5" [routerLink]="['/adopt', a.id]" > Détail 
+                    </button>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+</div>

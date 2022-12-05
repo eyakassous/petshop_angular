@@ -1,0 +1,37 @@
+<h1>Ajouter une alimentation</h1>
+<div class="form-style-3 ">
+    <form [formGroup]="prodForm" (ngSubmit)="Ajouter()">
+    <fieldset><legend>Alimentation</legend>
+    <label for="field2"><span>Libelle </span><input type="text" formControlName="libelle" class="input-field"/></label>
+    <div *ngIf="isnomPattern()" class="alert alert-warning">
+        Le nom du produit doit commencer par majuscule.
+       </div>
+       <div *ngIf="isnomrequired()" class="alert alert-warning">
+        Le nom doit etre obligatoire.
+        </div>
+    <label for="field3"><span>Prix </span><input type="number" formControlName="prix" class="input-field"/></label>
+    <div *ngIf="isprixPattern()" class="alert alert-warning">
+        Le prix du produit doit commencer par majuscule.
+       </div>
+       <div *ngIf="isprixrequired()" class="alert alert-warning">
+        Le prix doit etre obligatoire.
+        </div>
+    <label for="field4"><span>Date Fabriquation </span><input type="text" formControlName="datefabriquation" class="input-field"/></label>
+    <div *ngIf="isdateDrequired()" class="alert alert-warning">
+        Date Fabriquation doit etre obligatoire.
+        </div>
+    <label for="field5"><span>Date Fin </span><input type="text" formControlName="datefin" class="input-field"/></label>
+    <div *ngIf="isdateFrequired()" class="alert alert-warning">
+        Date Fin doit etre obligatoire.
+        </div>
+    <label for="field5"><span>Image</span><input type="text" formControlName="photo" class="input-field"/></label>
+    <div *ngIf="isphotorequired()" class="alert alert-warning">
+        Image est obligatoire.
+          </div>
+    <br>
+    <button  type="submit" [disabled]="prodForm.invalid"><i class="fa-regular fa-octagon-plus"></i> Ajouter</button>
+    <button type="button" [routerLink]="['/liste']">Retour</button>
+    </fieldset>
+    {{message}}
+    </form>
+    </div>

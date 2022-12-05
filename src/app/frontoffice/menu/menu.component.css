@@ -1,0 +1,26 @@
+.active{
+    text-decoration: underline;
+        color: #472f39;
+        text-decoration: none;
+}
+nav{
+    background-color:#e8e0d5;
+}
+#logo{
+        color:  #a4806e;
+      
+}
+.boutton{
+    padding: 10px;
+    background-color:#b96662;
+    color: white;
+    border-radius: 4px;
+   margin-right: 10px;
+    text-decoration: none;
+    width: 100px;
+}
+.c1{
+    background-color:#e8e0d5;
+}
+
+    

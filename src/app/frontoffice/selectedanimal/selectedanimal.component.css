@@ -1,0 +1,20 @@
+.c1{
+    margin-top: 120px;
+}
+.btnn1{
+    width: 50%;
+    font-size: 1.1rem;
+    background-color:  #a4806e;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: .3s;
+    border-radius: 30px;
+    text-align: center;
+    margin-left: 50px;
+}
+.btnn1:hover{
+    background-color:#786d4e ;
+
+}

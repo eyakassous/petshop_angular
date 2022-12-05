@@ -1,0 +1,21 @@
+<h1>modifier un accessoires</h1>
+<div class="form-style-3"> 
+    <form [formGroup]="prodForm"  >
+    <fieldset><legend>Accessoire</legend>
+    <label for="field2"><span>Libelle </span><input type="text" formControlName="libelle" class="input-field"  /></label>
+    <label for="field3"><span>Prix </span><input type="number" formControlName="prix" class="input-field"/></label>
+    <label for="field4"><span>Couleur </span><input type="text" formControlName="color" class="input-field"/></label>
+    <label for="field5"><span>Marque </span><input type="text" formControlName="brand" class="input-field"/></label>
+    <label for="field5"><span>Image</span><input type="text" formControlName="photo" class="input-field"/></label>
+    <label for="field6"><span>Materiel </span><input type="text" formControlName="materiel" class="input-field"/></label>
+    <label for="field7"><span>Dimension </span><input type="text" formControlName="dimension" class="input-field"/></label>
+   <!--- <label for="field8"><span>Disponible </span><input type="checkbox" formControlName="disponible" class="input-field"/></label>-->
+    <br>
+    <button  type="submit"> modifier</button>
+    <button type="button" [routerLink]="['liste']">Retour</button>
+    </fieldset>
+    </form>
+</div>
+
+{{lesproduits|json}}
+

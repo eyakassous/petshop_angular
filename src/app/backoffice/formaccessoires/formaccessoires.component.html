@@ -1,0 +1,61 @@
+ <h1>Ajouter un accessoires</h1>
+ <div class="form-style-3"> 
+        <form [formGroup]="prodForm" (ngSubmit)="Ajouter()" >
+        <fieldset><legend>Accessoire</legend>
+        <label for="field2"><span>Libelle </span><input type="text" formControlName="libelle" class="input-field"/></label>
+        <div *ngIf="isnomPattern()" class="alert alert-warning">
+                Le nom du produit doit commencer par majuscule.
+               </div>
+               <div *ngIf="isnomrequired()" class="alert alert-warning">
+                Le nom doit etre obligatoire.
+                </div>
+        <br>
+        <label for="field3"><span>Prix </span><input type="number" formControlName="prix" class="input-field"/></label>
+        <div *ngIf="isprixPattern()" class="alert alert-warning">
+                Le nom du produit doit commencer par majuscule.
+               </div>
+               <div *ngIf="isprixrequired()" class="alert alert-warning">
+                Le nom doit etre obligatoire.
+                </div>
+        <br>
+        <label for="field4"><span>Couleur </span><input type="text" formControlName="color" class="input-field"/></label>
+        <div *ngIf="iscouleurPattern()" class="alert alert-warning">
+                Le couleur doit commencer par  majuscule.
+               </div>
+               <div *ngIf="iscouleurrequired()" class="alert alert-warning">
+                Le couleur doit etre obligatoire.
+                </div>
+                 <br>
+        <label for="field5"><span>Marque </span><input type="text" formControlName="brand" class="input-field"/></label>
+        <div *ngIf="isbrandPattern()" class="alert alert-warning">
+                La marque doit commencer par majuscule.
+               </div>
+               <div *ngIf="isbrandrequired()" class="alert alert-warning">
+              La marque est obligatoire.
+                </div>
+                 <br>
+        <label for="field5"><span>Image</span><input type="text" formControlName="photo" class="input-field"/></label>
+        <div *ngIf="isphotorequired()" class="alert alert-warning">
+                Image est obligatoire.
+                  </div>
+        <label for="field6"><span>Materiel </span><input type="text" formControlName="materiel" class="input-field"/></label>
+        <div *ngIf="ismatPattern()" class="alert alert-warning">
+                Le materiel  commencer par majuscule.
+               </div>
+               <div *ngIf="ismatrequired()" class="alert alert-warning">
+               Le materiel doit etre obligatoire.
+                </div>
+                 <br>
+        <label for="field7"><span>Dimension </span><input type="text" formControlName="dimension" class="input-field"/></label>
+               <div *ngIf="isdimensionrequired()" class="alert alert-warning">
+               Dimension est obligatoire.
+                </div>
+                 <br>
+      
+        <br>
+        <button  [disabled]="prodForm.invalid" type="submit"> Ajouter</button>
+        {{message}}
+        <button type="button" [routerLink]="['liste']">Retour</button>
+        </fieldset>
+        </form>
+</div>

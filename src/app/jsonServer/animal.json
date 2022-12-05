@@ -1,0 +1,23 @@
+{ 
+    "Animals":[  
+        {"id":1,"nom":"Milo","photo":"assets/animals/animal1.jpg","weight":30,"disponible":true,"age":"12 mois","genre":"h","type":"dog"},
+        {"id":2,"nom":"layka","photo":"assets/animals/animal2.jpeg","weight":60,"disponible":false,"age":"3 mois","genre":"h","type":"dog"},
+        {"id":3,"nom":"KuZco","photo":"assets/animals/animal3.jpeg","weight":20,"disponible":true,"age":"5 mois","genre":"f","type":"dog"},
+        {"id":4,"nom":"Liana","photo":"assets/animals/animal4.jpeg","weight":30,"disponible":true,"age":"12 mois","genre":"f","type":"dog"},
+        {"id":5,"nom":"Bienca","photo":"assets/animals/animal5.jpeg","weight":60,"disponible":true,"age":"12 mois","genre":"h","type":"dog"},
+        {"id":6,"nom":"Caramella","photo":"assets/animals/animal6.jpeg","weight":40,"disponible":true,"age":"3 mois","genre":"f","type":"dog"},
+        {"id":7,"nom":"Blue","photo":"assets/animals/animal7.jpeg","weight":50.7,"disponible":false,"age":"9 mois","genre":"f","type":"dog"},
+        {"id":8,"nom":"duixe","photo":"assets/animals/animal8.jpeg","weight":60,"disponible":false,"age":"12 mois","genre":"h","type":"dog"},
+        {"id":9,"nom":"Diana","photo":"assets/animals/animal9.jpeg","weight":10,"disponible":false,"age":"12 mois","genre":"f","type":"dog"},
+        {"id":10,"nom":"Mlokhiya","photo":"assets/animals/animal10.jpg","weight":4.5,"disponible":true,"age":"12 mois","genre":"h","type":"cat"},
+        {"id":11,"nom":"Sushi","photo":"assets/animals/animal11.jpeg","weight":4.2,"disponible":false,"age":"3 mois","genre":"h","type":"cat"},
+        {"id":12,"nom":"Nana","photo":"assets/animals/animal12.jpeg","weight":4,"disponible":true,"age":"5 mois","genre":"f","type":"cat"},
+        {"id":13,"nom":"Indy","photo":"assets/animals/animal13.jpeg","weight":5,"disponible":true,"age":"12 mois","genre":"f","type":"cat"},
+        {"id":14,"nom":"Nousa","photo":"assets/animals/animal14.jpg","weight":4,"disponible":true,"age":"12 mois","genre":"h","type":"cat"},
+        {"id":15,"nom":"Sweety","photo":"assets/animals/animal15.jpg","weight":4.8,"disponible":true,"age":"3 mois","genre":"f","type":"cat"},
+        {"id":16,"nom":"Simba","photo":"assets/animals/animal16.webp","weight":4.7,"disponible":false,"age":"9 mois","genre":"f","type":"cat"},
+        {"id":17,"nom":"Sacha","photo":"assets/animals/animal17.jpg","weight":5,"disponible":false,"age":"12 mois","genre":"h","type":"cat"},
+        {"id":18,"nom":"Amira","photo":"assets/animals/animal18.jpg","weight":4,"disponible":false,"age":"12 mois","genre":"f","type":"cat"}
+    ]
+}
+

@@ -1,0 +1,56 @@
+
+<div class="container" style="margin-top: 120px;">
+    <div class="contact-box">
+        <div class="left">
+            <img src="./assets/contaaaaaaaaaaaaaacctt.avif" alt="">
+        </div>
+        <div class="right">
+        <h2>contact us!</h2>
+         <form [formGroup]="inscrireForm"  (ngSubmit)="ajouterctc()" >
+                
+                    <input class="form-control" type="text" formControlName="nom" placeholder="Votre Nom">
+                    <div *ngIf="isnomPattern()" class="alert alert-warning">
+                        Le nom  doit comporter au moins 2 mots commencant par chacun par majuscule.
+                       </div>
+                       <div *ngIf="isnomrequired()" class="alert alert-warning">
+                        J'attends un nom, mon cher !
+                        </div>
+                         <br>
+                    <input class="form-control" type="date" formControlName="datedenais" placeholder="Votre Date de naissance"> <br>
+                    <input class="form-control" type="text" formControlName="adresse" placeholder="Votre Adresse"> 
+                    <div *ngIf="isadrsrequired()" class="alert alert-warning">
+                        J'attends votre adresse, mon cher !
+                        </div> <br>
+                    <input class="form-control" type="text" formControlName="tel" placeholder="Votre Téléphone">
+                    <div *ngIf="istelrequired()" class="alert alert-warning">
+                        J'attends un numéro, mon cher !
+                        </div>  <br>
+                    <input class="form-control" type="text" formControlName="email" placeholder="Votre Mail">
+                     <div *ngIf="isemailrequired()" class="alert alert-warning">
+                        J'attends un e-mail, mon cher !
+                        </div> 
+                        <div *ngIf="isemailPattern()" class="alert alert-warning">
+                            J'attends un e-mail correcte , mon cher !
+                            </div> <br>
+                    <input class="form-control" type="text" formControlName="msg" placeholder="Votre Commentaire/Question">
+                    <div *ngIf="ismsgrequired()" class="alert alert-warning">
+                        J'attends un Commmentaire ou bien un question , mon cher !
+                        </div>  <br>
+                <div>
+                    <label> genre:</label>  <br>
+                    <input type="radio" formControlName="sexe" value="Femme"> femme
+                    <input type="radio" formControlName="sexe" value="homme"> homme
+
+                </div>
+                {{message}}
+                <div>
+                    <button class="btn"  [disabled]="inscrireForm.invalid">Envoyer</button> <br> <br>
+                    <button  type="reset"   class="btn " (click)="onReset()">  reinisialier  </button>
+                    <h5 class="homeee"> <a class="nav-link" routerLinkActive="active" routerLink="/accueil"> Accueil </a> </h5>
+                </div>
+                
+        </form>
+        </div>
+        </div>
+        </div>
+        

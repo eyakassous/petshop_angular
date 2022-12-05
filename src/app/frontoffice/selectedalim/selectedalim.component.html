@@ -1,0 +1,49 @@
+
+<div class="c1">
+    <div class="card m-5" style="max-width: 540px;margin-top: 120px;">
+      <!-- j'ai supprimer *ngIf="alimentation" -->
+     <div class="row g-0">
+        <div class="col-md-4" >
+        <img [src]="alimentation.photo" class="card-img-top p-2" alt="..." height="250px" width="900px">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title"> {{alimentation.libelle}}</h5>
+            <ngb-rating [max]="5" [(rate)]="alimentation.rate" [readonly]="true"></ngb-rating>
+            <p class="card-text"> <span class="c2">date de fabrication: </span>{{alimentation.dateFab}} </p>
+            <p class="card-text"> <span class="c2">date d'expiration: </span>{{alimentation.datefin}}</p>
+            <!--<p class="card-text"><span class="c2"> Commentaire:</span>{{alimentation.commentaire}}</p>-->
+            <form [formGroup]="alimForm">
+              <h5>Liste des Commentaires des Clients</h5>
+          <div formArrayName="commentaire">
+              <div *ngFor="let d of lescommentaires.controls; index as i">
+                  <strong> Commentaire n° {{i+1}}</strong>
+                  <div [formGroupName]="i">
+                      <label>Votre email  :</label>
+                      <input type="text" formControlName="email">
+                      <div *ngIf="isemailrequired()" class="alert alert-warning">
+                        J'attends un e-mail, mon cher !
+                        </div> 
+                        <div *ngIf="isemailPattern()" class="alert alert-warning">
+                            J'attends un e-mail correcte , mon cher !
+                            </div>
+                      <label>Votre message :</label>
+                      <input type="text" formControlName="message">
+                      <div *ngIf="ismsgrequired()" class="alert alert-warning">
+                        J'attends un Commmentaire ou bien un question , mon cher !
+                        </div>  <br>
+                      <input type="button"  value="Enregistrer un Commentaire" class="btn c3 btn-sm" (click)="ajouterAcc()"> <br>
+
+                  </div>
+              </div>
+          </div>
+         <br> <input type="button" (click)="ajouterComm()" value="Ajouter un Commentaire" class="btn c3 btn-sm" > <br>
+            </form>
+            {{message}}
+            <button type="button" class="btn btnn m-5" routerLinkActive="active"
+              routerLink="/alimentation">Retour</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

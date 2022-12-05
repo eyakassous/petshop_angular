@@ -1,0 +1,117 @@
+
+<div>
+    <div class=" acc"  style="margin-top: 100px;">
+        <div>
+            <img class="font" src="assets/animals/home1.jpg" alt="">
+        </div>
+        
+        <div class="hometext">
+            <h1><span>S'occuper</span>  d'un animal
+                  <br> avec <span>amour</span></h1>
+            <p>Un animal de compagnie est un animal recevant la protection des humains en échange de sa présence, de sa beauté, de sa jovialité ou encore pour ses talents.</p>
+                <button routerLinkActive="active" routerLink="/adopt" class="boutton">Découvrir nos amis</button>
+        </div>
+    </div>
+    
+    <div class="about">
+        <img class="aboutimg" src="assets/animals/home2.png" alt="">
+        <div class="textabout">
+            <h1>A propos de nous</h1>
+            <p>nous proposons des services de soins et des activités de haute  
+                gamme pour vos animaux de compagnie. 
+                Quelque soit le type d'hébergement que 
+                vous choisissez votre animal de compagnie bénéficiera toujours de repas premium , 
+                d'exercices quotidiens et de certains événements au cours de l'année.Au magasin, 
+                nos équipes sont à votre disposition pour vous fournir les meilleurs conseils pour 
+                prendre soin de vos animaux. Mais ils sont aussi présents pour vous accompagner dans 
+                toutes les étapes d'une adoption réussie. 
+                E&Mshop propose également de nombreux accessoires dédiés aux animaux de compagnie et adaptés à leurs besoins
+            </p>
+            <button routerLinkActive="active" routerLink="/aboutus" class="boutton">plus</button>
+        </div>
+    </div>
+    
+    <div class="section2">
+        <h1 class="titlefeedback">les <span style="color: #301B3F;">avis</span> de nos clients</h1>
+        <div class="feedbacks">
+            <div class="feedback">
+                <div class="userphoto"><img src="assets/animals/user1.png" alt="">
+                    <h1 class="datarating">3.7</h1>
+                </div>
+                <h2 class="titlefeed">best quality more than my expectation(USA)</h2>
+                <h6 class="review">Thank you so much for connecting us with you and for our adoption of LIANA .LIANA is an intelligent, beautiful and fun dog .You did a great thing in saving Liana and giving her a new home with loveing family .That would be us.
+                    We love LIANA so much</h6>
+            </div>
+            <div class="feedback">
+                <div class="userphoto"><img src="assets/animals/user2.png" alt="">
+                    <h1 class="datarating">4.9</h1>
+                </div>
+                <h2 class="titlefeed">notre Bianca est la bienvenue(France)</h2>
+                <h6 class="review">Je voulais juste vous remercier pour ce site Nous avons eu Bienca depuis qu'elle était bébé ! Bienca semble être la meilleure chose qui puisse nous arriver. Sa famille lui donnera tout ce dont elle a besoin, amour et attention. je recommanderai
+                   ce site merci encore pour tout.
+                    </h6>
+            </div>
+            <div class="feedback">
+                <div class="userphoto"><img src="assets/animals/user3.png" alt="">
+                    <h1 class="datarating">4.1</h1>
+                </div>
+                <h2 class="titlefeed">les meilleurs conseillés avec qui j'ai collaboré(France) </h2>
+                <h6 class="review">
+                    les conseillés de E&Mpetshop m'ont aidé à choisir mon petit gentil gars Milo. 
+                    Il sourit tout le temps. Je ne pense pas que la transition ait été difficile
+                     pour lui. Je suis juste amoureux de ce petit gars.
+                </h6>
+            </div>
+           
+        </div>
+    </div>
+  
+    
+    
+    <div style="display: flex; justify-self: unset;padding-left: 600px;padding-top: 50px; background-color: beige;">
+        <img src="assets/logo11.png" width="90" height="70" style=" background-color: beige;"/>
+        <h2 style=" background-color: beige;">Nouveaux Accessoires</h2>
+    </div>
+    <div class="images back">
+    
+    <!---
+        <div class="imaget" *ngFor="let pr of Alim">
+            <div><img [src]="pr.photo" class="card-img-top p-2" width="250" height="200"></div>
+            <div style="margin-left: 20px;">
+                <h3 class="producttitle">{{pr.libelle}}</h3>
+    
+                <i class="fa fa-star" style="color: orange; width:11;"></i>
+                <i class="fa fa-star" style="color: orange;;"></i>
+                <i class="fa fa-star" style="color: black;"></i>
+                <i class="fa fa-star" style="color: black;"></i>
+                <i class="fa fa-star" style="color: black;"></i>
+                <br>
+                <div class="pricee"> Prix:<span class="price">{{pr.prix}}</span>DT </div>
+                <span class="badge text-bg-secondary" *ngIf="pr.disponible==true">Disponible</span> 
+                      <span class="badge text-bg-secondary m-4">Commander</span> <br> <br> 
+                      <button type="button" class="btn btn-primary" [routerLink]="['/accueil',pr.id]" style="background-color: blue"> Détail 
+                          </button>
+            </div>
+        </div>-->
+        <div class="imaget" *ngFor="let p of lesProduits">
+            <div><img [src]="p.photo" class="card-img-top p-2" width="250" height="200"></div>
+            <div style="margin-left: 20px;">
+                <h3 class="producttitle">{{p.libelle}}</h3>
+                <span class="badge rounded-pill text-bg-danger p-1">{{p.remise}} %</span> <br>
+                <ngb-rating [max]="5" [(rate)]="p.rate" [readonly]="true"></ngb-rating>
+                   
+                <br>
+
+                <div class="pricee"> Prix:<span class="price" style="text-decoration:line-through">{{p.prix}}DT </span>
+                 <span class="price">{{ p.prixnouv}}</span>DT </div>
+                <span class="badge text-bg-secondary" *ngIf="p.disponible==true">Disponible</span> <br> <br> 
+                      <button type="button" class="btn btnn1" [routerLink]="['/accueil', p.id]" > Détail 
+                          </button>
+                          <button type="button" class="btn btnn" style="margin-left:5px" [routerLink]="['/panier']">Commander
+                        </button>
+            </div>
+        </div>
+        </div>
+    
+        
+    

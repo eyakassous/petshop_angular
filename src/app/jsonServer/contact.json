@@ -1,0 +1,44 @@
+{
+  "contact": [
+    {
+      "nom": "Maram Gnouma",
+      "datedenais": "2022-03-03",
+      "tel": "94135108",
+      "email": "maramgnouma@gmail.com",
+      "sexe": "Femme",
+      "adresse": "19 rue ariana",
+      "msg": "ton site est parfait ",
+      "id": 1
+    },
+    {
+      "nom": "mar",
+      "datedenais": "2022-12-02",
+      "tel": "sss",
+      "email": "sss",
+      "sexe": "homme",
+      "adresse": "sss",
+      "msg": "sss",
+      "id": 2
+    },
+    {
+      "nom": "Eya Kassous",
+      "datedenais": "2022-12-04",
+      "tel": "9587552",
+      "email": "eyakassous@gmail.com",
+      "sexe": "Femme",
+      "adresse": "20Riath andalous",
+      "msg": "ce site est agréable",
+      "id": 3
+    },
+    {
+      "nom": "Maram Gnouma",
+      "datedenais": "2022-12-02",
+      "tel": "4569888",
+      "email": "maramgnouma200@gmail.com",
+      "sexe": "Femme",
+      "adresse": "mmmm",
+      "msg": "sssss",
+      "id": 4
+    }
+  ]
+}

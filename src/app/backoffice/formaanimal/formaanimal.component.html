@@ -1,0 +1,17 @@
+<h1>Ajouter un animal</h1>
+<div class="form-style-3"> 
+       <form [formGroup]="AnimForm" (ngSubmit)="Ajouter()" >
+       <fieldset><legend>animal</legend>
+       <label for="field2"><span>Nom </span><input type="text" formControlName="nom" class="input-field"/></label>
+       <label for="field3"><span>Prix </span><input type="number" formControlName="prix" class="input-field"/></label>
+       <label for="field4"><span>Weight </span><input type="text" formControlName="weight" class="input-field"/></label>
+       <label for="field5"><span>Age </span><input type="text" formControlName="age" class="input-field"/></label>
+       <label for="field5"><span>Genre</span><input type="text" formControlName="genre" class="input-field"/></label>
+       <label for="field6"><span>Type </span><input type="text" formControlName="type" class="input-field"/></label>
+       
+       <br>
+       <button  type="submit"> Ajouter</button>
+       <button type="button" [routerLink]="['liste']">Retour</button>
+       </fieldset>
+       </form>
+</div>

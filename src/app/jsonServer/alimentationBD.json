@@ -1,0 +1,154 @@
+{
+  "alimentations": [
+    {
+      "id": 101,
+      "libelle": "PRO CHOICE GF PÂTE CHAT POISSON",
+      "photo": "assets/images/alim1.jpg",
+      "quantite": 100,
+      "disponible": true,
+      "prix": 5.2,
+      "dateFab": "18/03/2021",
+      "datefin": "17/08/2024",
+      "cat": "alimentation",
+      "rate": 4
+    },
+    {
+      "id": 102,
+      "libelle": "PÂTÉ ET MORCEAUX SAUMON FRAÎCHE",
+      "photo": "assets/images/patecat.jpg",
+      "quantite": 100,
+      "disponible": true,
+      "prix": 3.2,
+      "dateFab": "08/03/2022",
+      "datefin": "20/03/2025",
+      "cat": "alimentation",
+      "rate": 3,
+      "commentaire": [
+        {
+          "email": "jjjj",
+          "message": "dddd"
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "libelle": "POCHON PLAISIR SAUMON/CABILLAUD ",
+      "photo": "assets/images/pochon.jpg",
+      "quantite": 100,
+      "disponible": true,
+      "prix": 3.2,
+      "dateFab": "01/05/2021",
+      "datefin": "18/04/2023",
+      "cat": "alimentation",
+      "rate": 5
+    },
+    {
+      "id": 104,
+      "libelle": "SIMBA CAT WITH TUNA/WHITEFISH",
+      "photo": "assets/images/tuna.jpg",
+      "quantite": 200,
+      "disponible": true,
+      "prix": 8.2,
+      "dateFab": "18/07/2022",
+      "datefin": "18/10/2025",
+      "cat": "alimentation",
+      "rate": 2
+    },
+    {
+      "id": 105,
+      "libelle": "KIPPY CAT BOEUF ",
+      "photo": "assets/images/boeuf.jpg",
+      "quantite": 200,
+      "disponible": true,
+      "prix": 10.9,
+      "dateFab": "30/04/2020",
+      "datefin": "20/10/2023",
+      "cat": "alimentation",
+      "rate": 2
+    },
+    {
+      "id": 106,
+      "libelle": "SERRANO SNACK THON SAUMON ",
+      "photo": "assets/images/croquette.jpg",
+      "quantite": 100,
+      "disponible": true,
+      "prix": 9.75,
+      "dateFab": "22/05/2020",
+      "datefin": "01/01/2022",
+      "cat": "alimentation",
+      "rate": 4
+    },
+    {
+      "id": 107,
+      "libelle": "BOITE CLAUDER'S CANARD ",
+      "photo": "assets/images/alimchien.jpg",
+      "quantite": 200,
+      "disponible": true,
+      "prix": 19.75,
+      "dateFab": "13/12/2021",
+      "datefin": "04/04/2024",
+      "cat": "alimentation",
+      "rate": 5
+    },
+    {
+      "id": 108,
+      "libelle": "BURGER CAT PATE POULET",
+      "photo": "assets/images/kippy.jpg",
+      "quantite": 100,
+      "disponible": true,
+      "prix": 14,
+      "dateFab": "02/11/2021",
+      "datefin": "25/08/2023",
+      "cat": "alimentation",
+      "rate": 4
+    },
+    {
+      "id": 109,
+      "libelle": "PRO CHOICE GF PÂTE CHIEN POULET",
+      "photo": "assets/images/prochien.jpg",
+      "quantite": 100,
+      "disponible": true,
+      "prix": 6,
+      "dateFab": "02/02/2022",
+      "datefin": "18/03/2025",
+      "cat": "alimentation",
+      "rate": 5
+    },
+    {
+      "id": 110,
+      "libelle": "BOITE KIPPY PUPPY DINDE POMME",
+      "photo": "assets/images/kindy.jpg",
+      "quantite": 200,
+      "disponible": true,
+      "prix": 6.9,
+      "dateFab": "20/11/2022",
+      "datefin": "12/12/2024",
+      "cat": "alimentation",
+      "rate": 4
+    },
+    {
+      "id": 111,
+      "libelle": "CARNILOVE BOITE SANGLIER AGNEAU",
+      "photo": "assets/images/boite.jpg",
+      "quantite": 200,
+      "disponible": true,
+      "prix": 12,
+      "dateFab": "03/01/2021",
+      "datefin": "20/04/2023",
+      "cat": "alimentation",
+      "rate": 4
+    },
+    {
+      "id": 112,
+      "libelle": "SP.DOG EXC.POCHON MEDIUM SENIOR POULET",
+      "photo": "assets/images/sp.jpg",
+      "quantite": 100,
+      "disponible": true,
+      "prix": 20.9,
+      "dateFab": "22/11/2021",
+      "datefin": "10/06/2024",
+      "cat": "alimentation",
+      "rate": 4
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+.box{
+    margin-bottom: 30px;
+}
+.imaget {
+   
+    background-color: #e8e0d5;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: box-shadow .2s ease 0s;
+    display: flex;
+    border: 1.5px solid #a4806e;
+    box-shadow: 0 3px 3px 0 #d6c7b3;
+    margin-left: 30px;
+}
+.imaget:hover{
+    box-shadow:  4px 4px #57483c  ;
+    transform: scale(1.05);
+    transition: .5s;
+    
+}
+.boutton {
+    padding: 10px;
+    background-color: #b96662;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    text-decoration: none;
+    margin-bottom: 50px;
+    margin-right: 20px;
+}
+.boutton:hover{
+    box-shadow:  4px 4px #57483c  ;
+    transform: scale(1.05);
+    transition: .5s;
+    background-color:#a4806e;
+}
+ngb-rating {
+    color: #FFC107;
+    font-size: 25px;
+}
+
+.btnn{
+    width: 50%;
+    font-size: 1.1rem;
+    background-color:  #a4806e;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: .3s;
+    border-radius: 30px;
+}
+.btnn1{
+    width: 30%;
+    font-size: 1.1rem;
+    background-color:  #a4806e;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: .3s;
+    border-radius: 30px;
+}
+.btnn1:hover{
+    background-color:#786d4e ;
+
+}
+.btnn:hover{
+    background-color:#786d4e ;
+
+}

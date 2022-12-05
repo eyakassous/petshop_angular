@@ -1,0 +1,33 @@
+
+<h4>Liste des animaux</h4>
+<table class="table table-striped container">
+    <thead>
+        <tr>
+            <th> Image</th> 
+            <th> Id</th>
+            <th>Nom</th>
+            <th>Prix</th>
+            <th>Weight</th>
+            <th>Age</th>
+            <th>Type</th>
+        </tr>            
+    </thead>
+    <tbody>
+        <tr *ngFor="let a of lesanimaux">
+            <td><img [src]="a.photo" width="50px"></td>
+            <td>{{a.id}}</td>
+            <td>{{a.nom}} </td>
+            <td> {{a.weight}}</td>
+            <td> {{a.age}}</td>
+            <td> {{a.type}}</td>
+            <td> <input type="button" value="Modifier" class="btn btn-warning"></td>
+            <td> <input type="button" value="Supprimer" class="btn btn-info" (click)="supprimer(a)" ></td>
+        </tr>    
+    </tbody>
+</table>
+
+
+
+
+
+
